@@ -1,32 +1,17 @@
 {
-  "name": "",
-  "private": true,
-  "type": "module",
+  "name": "simple-transit-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production react-router build",
-    "dev": "react-router dev",
-    "start": "cross-env NODE_ENV=production react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "dev": "pnpm --parallel dev",
+    "start": "pnpm -r start",
+    "build": "pnpm -r build"
   },
-  "dependencies": {
-    "@react-router/node": "^7.1.0",
-    "@react-router/serve": "^7.1.0",
-    "isbot": "^5.1.17",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-router": "^7.1.0"
-  },
-  "devDependencies": {
-    "@react-router/dev": "^7.1.0",
-    "@types/node": "^20",
-    "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.1",
-    "autoprefixer": "^10.4.20",
-    "cross-env": "^7.0.3",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.16",
-    "typescript": "^5.7.2",
-    "vite": "^5.4.11",
-    "vite-tsconfig-paths": "^5.1.4"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }
