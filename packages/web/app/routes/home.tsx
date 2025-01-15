@@ -12,7 +12,7 @@ export async function loader() {
   const response: {
     requestId: string;
     message: string;
-  } = await (await fetch("http://localhost:3000")).json();
+  } = await (await fetch(process.env.API_URL as string)).json();
   return response;
 }
 
